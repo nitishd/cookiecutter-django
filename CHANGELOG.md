@@ -2,6 +2,10 @@
 All enhancements and patches to Cookiecutter Django will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2019-01-22]
+### Added
+- Add helper package django-querycount (@nitishd)
+
 ## [2018-02-16]
 ### Changed
 - Upgraded to Django 2.0 (@epicwhale)

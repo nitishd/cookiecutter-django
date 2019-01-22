@@ -74,6 +74,11 @@ if env('USE_DOCKER') == 'yes':
 INSTALLED_APPS += ['django_extensions']  # noqa F405
 {% if cookiecutter.use_celery == 'y' -%}
 
+# django-querycount
+# ------------------------------------------------------------------------------
+# https://github.com/bradmontgomery/django-querycount#installation
+MIDDLEWARE += ['querycount.middleware.QueryCountMiddleware']  # noqa F405
+
 # Celery
 # ------------------------------------------------------------------------------
 # http://docs.celeryproject.org/en/latest/userguide/configuration.html#task-always-eager
